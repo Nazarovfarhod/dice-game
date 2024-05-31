@@ -57,7 +57,7 @@ btnHold.addEventListener("click", () => {
     score[activePlayer] += currentScore;
     document.getElementById(`score-${activePlayer}`).textContent =
       score[activePlayer];
-    if (score[activePlayer] >= 10) {
+    if (score[activePlayer] >= 100) {
       new Audio("./audio/win-sound.mp3").play();
       document
         .querySelector(`.player-${activePlayer}`)
